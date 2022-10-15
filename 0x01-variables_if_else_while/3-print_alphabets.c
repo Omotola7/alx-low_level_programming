@@ -20,7 +20,7 @@ int main(void)
 		}
 	while
 		(m <= 'Z') {
-			putchar(n);
+			putchar(m);
 			m++;
 		}
 	putchar('\n');
