@@ -8,22 +8,26 @@ int main(void)
 {
 	int l;
 	int m;
+	int n;
 
-	for (l = 0; l < 99; l++)
+	for (l = 0; l < 8; l++)
 	{
-		for (m = l + 1; m < 100; m++)
+		for (m = l + 1; m < 9; m++)
 		{
-			putchar((l / 10) + '0');
-			putchar((l % 10) + '0');
-
-			putchar(' ');
-
-			putchar((m / 10) + '0');
-			putchar((m % 10) + '0');
-			if (l == 98 && m == 99)
-				break;
-			putchar(',');
-			putchar(' ');
+			for (n = m + 1; n < 10; n++)
+			{
+				if (l != m && l != n && m != n)
+				{
+					putchar(l + '0');
+					putchar(m + '0');
+					putchar(n + '0');
+					if (l + m + n < 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
 	}
 	putchar('\n');
