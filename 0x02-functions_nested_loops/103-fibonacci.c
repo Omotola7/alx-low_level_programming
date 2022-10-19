@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 /**
  * main - main bloacks
  * Description: print the sum of even fibonacci numbers up to a fib value
