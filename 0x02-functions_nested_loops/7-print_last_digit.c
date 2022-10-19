@@ -11,6 +11,7 @@ int print_last_digit(int n)
 
 	if (ml < 0)
 		ml *= -1;
+
 	_putchar(ml + '0');
 
 	return (0);
