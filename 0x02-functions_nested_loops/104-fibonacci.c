@@ -29,7 +29,7 @@ int main(void)
 	for (e = 92; e < 99; ++e)
 	{
 		printf(", %lu", o1 + (o2 / 1000000000));
-		pirntf("%lu", o2 % 1000000000);
+		printf("%lu", o2 % 1000000000);
 		o1 = o1 + m1;
 		m1 = o1 - m1;
 		o2 = o2 + m2;
