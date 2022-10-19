@@ -24,7 +24,7 @@ int main(void)
 		}
 
 		o = m;
-		m = e;
+		m += e;
 		e = o;
 		count++;
 	}
