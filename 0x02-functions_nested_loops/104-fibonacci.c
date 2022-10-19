@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long int e, m, o, m1, m2, o1, o1;
+	unsigned long int e, m, o, m1, m2, o1, o2;
 
 	m = 1;
 	o = 2;
