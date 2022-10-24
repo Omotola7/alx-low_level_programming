@@ -27,7 +27,7 @@ int _atoi(char *s)
 
 	for (i = count - size; i < count; i++)
 	{
-		oi = oi + ((*(s + i) - 480) * l);
+		oi = oi + ((*(s + i) - 48) * l);
 		l /= 10;
 	}
 	return (oi * mp);
