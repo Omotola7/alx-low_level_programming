@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-	int k = 0, g = 0;
+	int l = 0, m = 0;
 	time_t t;
 
 	srand((unsigned int) time(&t));
-	while (g < 2772)
+	while (m < 2772)
 	{
-		k = rand() % 128;
-		if ((g + k) > 2772)
+		l = rand() % 128;
+		if ((m + l) > 2772)
 			break;
-		g = g + k;
-		printf("%g", k);
+		m = m + l;
+		printf("%d", l);
 	}
-	printf("%g\n", (2772 - g));
+	printf("%m\n", (2772 - m));
 	return (0);
 }
