@@ -13,12 +13,12 @@ int main(void)
 	srand((unsigned int) time(&t));
 	while (g < 2772)
 	{
-		k = srand() % 128;
+		k = rand() % 128;
 		if ((g + k) > 2772)
 			break;
 		g = g + k;
-		printf("%d", k);
+		printf("%g", k);
 	}
-	printf("%d\n", (2772 - c));
+	printf("%g\n", (2772 - g));
 	return (0);
 }
