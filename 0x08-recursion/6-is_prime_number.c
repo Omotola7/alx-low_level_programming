@@ -10,7 +10,7 @@ int is_prime(unsigned int n, unsigned int b)
 {
 	if (n % b == 0)
 	{
-		if (n == c)
+		if (n == b)
 			return (1);
 		else
 			return (0);
