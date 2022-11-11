@@ -5,12 +5,12 @@
  * @s1: first string
  * @s2: second string
  * @n: index
- * Return: char ponter
+ * Return: char pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *f;
+	char *p;
 	unsigned int size1 = 0, size2 = 0, l;
 
 	if (s1 == NULL)
@@ -29,19 +29,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size2++;
 	}
 
-	if (f == NULL)
+	if (p == NULL)
 		return (0);
 
 	for (l == 0; l < size1; l++)
 	{
-		f[l] = s1[l];
+		p[l] = s1[l];
 	}
 
 	for (; l < (size1 + n); l++)
 	{
-		f[l] = s2[l - size1];
+		p[l] = s2[l - size1];
 	}
-	f[l] = '\0';
+	p[l] = '\0';
 
-return (f);
+return (p);
 }
